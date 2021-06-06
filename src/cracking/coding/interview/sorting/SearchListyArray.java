@@ -19,7 +19,7 @@ public class SearchListyArray {
         byte[] bitfield = new byte[(int) (numberOfInts / 8)];
 
 
-        int result = searchListyArray.search(listy, 20);
+        int result = searchListyArray.search(listy, 3);
         System.out.println("Num is: " + 18 + " Result is :" + result);
 
 
@@ -27,11 +27,9 @@ public class SearchListyArray {
 
     public int search(Listy listy, int x) {
         int index = 1;
-
         while (listy.elementAt(index) != -1 && listy.elementAt(index) < x) {
             index *= 2;
         }
-
         return binarySearch(listy, index / 2, index, x);
     }
 
@@ -49,7 +47,6 @@ public class SearchListyArray {
             } else if (x > elementAtMiddle) {
                 start = mid + 1;
             }
-
         }
         return -1;
     }

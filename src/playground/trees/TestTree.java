@@ -72,7 +72,7 @@ public class TestTree {
         try {
             scanner = new Scanner(
                     new File(
-                            "C://University/Project_X/inteview_practise/CircularBuffer/src/com/playground/trees/preorder_tree.txt"));
+                            "C://University/Project_X/inteview_practise/CircularBuffer/src/com/playground/pattern_based.trees/preorder_tree.txt"));
 
             if (scanner.hasNextInt()) {
                 int value = scanner.nextInt();

@@ -9,7 +9,7 @@ public class QuickSort {
      */
     public static void main(String[] args) {
         QuickSort sort = new QuickSort();
-        int[] arr = {2};
+        int[] arr = {2,2,3,1};
 
         sort.quickSort(arr, 0, arr.length - 1);
 
@@ -31,10 +31,6 @@ public class QuickSort {
     public int randomizedPartition(int[] input, int start, int end) {
         int random = getRandomNumber(start, end);
 
-        // int temp = input[random];
-        // input[random] = input[start];
-        // input[start] = temp;
-
         swap(input, start, random);
 
         int pivot = input[start];
@@ -51,10 +47,6 @@ public class QuickSort {
                 swap(input, i, j);
             }
         }
-
-        // temp = input[i];
-        // input[i] = pivot;
-        // input[start] = temp;
 
         swap(input, start, i);
 

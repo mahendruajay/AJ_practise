@@ -13,9 +13,14 @@ public class TempTryAnything {
 		
 		String s = "eree";
 		
-		System.out.println(s.substring(4));
+//		System.out.println(s.substring(4));
 		
-		BitSet e ;
+		BitSet e ;/**/
+
+		int rangeSize = (1<<20);
+
+		int arrSize  = Integer.MAX_VALUE / rangeSize +1;
+		System.out.println("arrSize " + arrSize);
 	}
 
 }

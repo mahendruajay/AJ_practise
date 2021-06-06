@@ -8,7 +8,8 @@ public class CountingSort {
     public static void main(String[] args) {
         CountingSort sort = new CountingSort();
 
-        int[] arr = {0, 1, 0, 1, 0};
+//        int[] arr = {0, 1, 0, 1, 0};
+        int[] arr = {9, 3, 1, 3, 6, 3,3,2};
 
         int[] output = sort.countingSort(arr, 9);
 
@@ -20,7 +21,7 @@ public class CountingSort {
 
     public int[] countingSort(int[] input, int range) {
         int[] output = new int[input.length];
-        int[] rangeArr = new int[range];
+        int[] rangeArr = new int[range+1];
 
         for (int i = 0; i < input.length; i++) {
             rangeArr[input[i]] = rangeArr[input[i]] + 1;

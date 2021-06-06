@@ -18,7 +18,7 @@ public class EditDistance {
 
 
     /**
-     * Uses recursion to find minimum edits
+     * Uses pattern_based.recursion to find minimum edits
      */
     public int recEditDistance(char[] str1, char str2[], int len1, int len2) {
 
